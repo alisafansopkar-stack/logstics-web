@@ -10,7 +10,7 @@ const Navbar = () => {
           className="pointer-events-none absolute right-0 top-0 h-full w-[210px] bg-[#6f8a28]"
           style={{ clipPath: "polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
         />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-0 h-full flex items-center justify-between text-[10px]">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-0 h-full flex items-center justify-between text-[11px]">
           <div className="flex items-center gap-6 text-[#5b5b5b]">
             <span className="inline-flex items-center gap-2">
               <img src={stopWatchIcon} alt="Stopwatch" className="h-3.5 w-3.5 object-contain" />
@@ -58,7 +58,7 @@ const Navbar = () => {
           style={{ clipPath: "polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%)" }}
         />
 
-        <div className="max-w-6xl mx-auto px-6 lg:px-0 h-full relative">
+        <div className="max-w-6xl mx-auto px-8 lg:px-2 h-full relative">
           {/* 3-column layout: left spacer, perfectly centered menu, right actions */}
           <div className="h-full grid grid-cols-[1fr_auto_1fr] items-center">
             <div className="justify-self-start leading-none">
@@ -71,8 +71,14 @@ const Navbar = () => {
             </div>
 
             {/* Center menu */}
-            <nav className="hidden md:flex items-center justify-center">
-              <ul className="flex items-center gap-11 lg:gap-12 text-[13px] font-semibold tracking-[0.01em]">
+            <nav className="hidden md:flex items-center justify-center -ml-10 lg:-ml-12">
+              <ul className="flex items-center gap-8 lg:gap-9 text-[14px] font-semibold tracking-[0.01em]">
+                <li className="cursor-pointer hover:text-orange-200 transition-colors">
+                  Home
+                </li>
+                <li className="cursor-pointer hover:text-orange-200 transition-colors">
+                  About Us
+                </li>
                 <li className="cursor-pointer hover:text-orange-200 transition-colors">
                   Services
                 </li>
@@ -85,22 +91,25 @@ const Navbar = () => {
                 <li className="cursor-pointer hover:text-orange-200 transition-colors">
                   Blog
                 </li>
+                <li className="cursor-pointer hover:text-orange-200 transition-colors">
+                  Contact
+                </li>
               </ul>
             </nav>
 
             {/* Right call + button (sits on orange diagonal) */}
-            <div className="justify-self-end flex items-center gap-3 pr-3">
+            <div className="justify-self-end flex items-center gap-5 pr-4">
               <div className="hidden lg:flex items-center gap-2 min-w-[118px]">
                 <img src={callIcon} alt="Call icon" className="h-6 w-6 object-contain shrink-0" />
                 <div className="leading-tight">
-                  <p className="text-[8px] text-white/90 leading-none mb-1">Call Us Anytime</p>
-                  <p className="text-[10px] leading-none font-semibold text-[#8dd14a]">
+                  <p className="text-[10px] text-white/90 leading-none mb-1">Call Us Anytime</p>
+                  <p className="text-[12px] leading-none font-semibold text-[#8dd14a]">
                     +91 6785878686
                   </p>
                 </div>
               </div>
 
-              <button className="h-[24px] rounded-[2px] bg-[#6f8a28] px-4 text-[8px] font-extrabold tracking-wide text-white shadow-sm hover:bg-[#7fa733] transition-colors">
+              <button className="h-[28px] rounded-[2px] bg-[#6f8a28] px-4 text-[10px] font-extrabold tracking-wide text-white shadow-sm hover:bg-[#7fa733] transition-colors">
                 REQUEST A QUOTE
               </button>
             </div>
