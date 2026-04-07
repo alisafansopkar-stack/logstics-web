@@ -7,14 +7,14 @@ import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
-    <>
+    <div className="pt-[78px]">
       <Navbar />
       <Hero />
       <Features />
       <Stats />
       <Services />
       <Footer />
-    </>
+    </div>
   );
 }
 
