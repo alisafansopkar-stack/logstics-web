@@ -15,7 +15,7 @@ const Services = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-0 pt-14 pb-12">
         <div className="text-center">
           <span className="inline-flex items-center rounded-full bg-[#ff5b2c] px-4 py-1 text-[10px] font-bold tracking-wide text-white shadow-sm">
-            ABOUT ABOUT
+            ABOUT 
           </span>
           <h2 className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#6f8a28]">
             Wide Variety of Logistics Services
